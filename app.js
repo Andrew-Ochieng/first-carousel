@@ -3,9 +3,10 @@ const carousel = document.getElementById('carousel')
 const image = document.getElementById('image')
 
 const images = [
+    "./breakthrough.jpeg",
     "./struggle.jpg",
     "./start.jpeg",
-    "./breakthrough.jpeg"
+    "./moon.jpg"
 ]
 
 
@@ -26,9 +27,13 @@ function slideShow() {
 }
 
 
-window.onload = slideShow;
+// onpage load
+// window.onload = slideShow;
 
-
+// on pageload alternative
+document.addEventListener("DOMContentLoaded", () => {
+    slideShow()
+})
 
 
 
